@@ -67,7 +67,7 @@ function Views() {
               {/* Photo */}
               <div className="col-md-3 text-center">
                 <img
-                  src={`http://localhost:9999/employee/photo/${employee.empId}`}
+                  src={`https://springbootbackend.up.railway.app/employee/photo/${employee.empId}`}
                   alt="emp"
                   width="120"
                   className="rounded-circle"
