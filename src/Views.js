@@ -16,9 +16,9 @@ function Views() {
 
       // ✅ Check if input is number (ID) or email
       if (!isNaN(search)) {
-        url = `http://localhost:9999/employee/getByEmpId/${search}`;
+        url = `https://springbootbackend.up.railway.app/employee/getByEmpId/${search}`;
       } else {
-        url = `http://localhost:9999/employee/getByEmpEmail/${encodeURIComponent(search)}`;
+        url = `https://springbootbackend.up.railway.app/employee/getByEmpEmail/${encodeURIComponent(search)}`;
       }
 
       const res = await axios.get(url);
