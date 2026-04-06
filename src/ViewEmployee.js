@@ -14,7 +14,7 @@ function ViewEmployees() {
   const fetchEmployees = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:9999/employee/AllEmployees"
+        "https://springbootbackend.up.railway.app/employee/AllEmployees"
       );
       setEmployees(res.data);
     } catch (err) {
@@ -27,7 +27,7 @@ function ViewEmployees() {
     if (window.confirm("Are you sure?")) {
       try {
         await axios.delete(
-          `http://localhost:9999/employee/deleteEmployee/${id}`
+          `https://springbootbackend.up.railway.app/employee/deleteEmployee/${id}`
         );
         setMessage("Employee Deleted Successfully ");
         fetchEmployees();
@@ -80,7 +80,7 @@ function ViewEmployees() {
                     <td>₹ {emp.salary}</td>
                     <td>
                       <img
-                        src={`http://localhost:9999/employee/photo/${emp.empId}`}
+                        src={`https://springbootbackend.up.railway.app/employee/photo/${emp.empId}`}
                         alt="emp"
                         width="150"
                         height="100"
