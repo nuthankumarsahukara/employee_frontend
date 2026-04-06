@@ -27,7 +27,7 @@ function UpdateEmployee() {
   // ✅ Load employee data
   useEffect(() => {
     axios
-      .get(`http://localhost:9999/employee/getByEmpId/${empId}`)
+      .get(`https://springbootbackend.up.railway.app/employee/getByEmpId/${empId}`)
       .then((res) => {
         setEmployee(res.data);
       })
@@ -71,7 +71,7 @@ function UpdateEmployee() {
 
     try {
       await axios.put(
-        `http://localhost:9999/employee/updateEmployee/${empId}`,
+        `https://springbootbackend.up.railway.app/employee/updateEmployee/${empId}`,
         formData,
         {
           headers: {
