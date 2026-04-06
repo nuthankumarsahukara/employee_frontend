@@ -238,7 +238,7 @@ function UpdateEmployee() {
             <div className="col-md-6 mb-3">
               <label>Current Photo</label><br />
               <img
-                src={`http://localhost:9999/employee/photo/${empId}`}
+                src={`https://springbootbackend.up.railway.app/employee/photo/${empId}`}
                 alt="emp"
                 width="80"
                 className="rounded"
