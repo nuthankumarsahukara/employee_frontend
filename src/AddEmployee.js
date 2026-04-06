@@ -43,7 +43,7 @@ function AddEmployee(){
 
     try {
       const response = await axios.post(
-        "http://localhost:9999/employee/addEmployee",
+        "https://springbootbackend.up.railway.app/employee/addEmployee",
         formData,
         {
           headers: {
